@@ -18,7 +18,7 @@ jobs:
         with:
           DIFF_FILTER: 'AMR'
           PATTERNS: |
-            permissions/**.json
+            permissions/**/**.json
       - name: Run bq-permissions
         run: |
           echo Running bq-permissions on ${{ env.GIT_DIFF }}
